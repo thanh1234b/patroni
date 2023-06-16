@@ -7,7 +7,7 @@ if [ -f /a.tar.xz ]; then
     sudo ln -snf dash /bin/sh
 fi
 
-readonly PATRONI_SCOPE="${PATRONI_SCOPE:-batman}"
+readonly PATRONI_SCOPE="${PATRONI_SCOPE:-pg_cluster}"
 PATRONI_NAMESPACE="${PATRONI_NAMESPACE:-/service}"
 readonly PATRONI_NAMESPACE="${PATRONI_NAMESPACE%/}"
 DOCKER_IP=$(hostname --ip-address)
